@@ -43,3 +43,7 @@ require __DIR__.'/auth.php';
 Route::get('/citas', [CitaController::class, 'index'])->name('citas.index');
 Route::get('/citas/create', [CitaController::class, 'create'])->name('citas.create');
 Route::post('/citas', [CitaController::class, 'store'])->name('citas.store');
+
+Route::get('/pacientes', [PacienteController::class, 'index'])->name('pacientes.index');
+Route::get('/pacientes/create', [PacienteController::class, 'create'])->name('pacientes.create');
+Route::post('/pacientes', [PacienteController::class, 'store'])->name('pacientes.store');
